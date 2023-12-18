@@ -7,6 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 from elasticsearch import Elasticsearch
+from datetime import datetime
+from scrapeFunctionsModule.mapping import map_categories
 
 
 
@@ -46,9 +48,10 @@ def scrape_asahi_news():
             title = soup.find('meta', property='og:title')
             url = soup.find('meta', property='og:url')
             description = soup.find('meta', property='og:description')
-            publishedDateTime = soup.find('p', class_='EnLastUpdated')
-            category_element = soup.find('p', class_='Genre')
+            # publishedDateTime = soup.find('p', class_='EnLastUpdated').text
+            category = soup.find('p', class_='Genre').text
             newsSource = soup.find('meta', property='og:site_name')
+            
 
             metadata = {}
 
@@ -59,14 +62,14 @@ def scrape_asahi_news():
 
             if url:
                 metadata["url"] = url['content']
+                metadata["createdDateTime"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             else:
                 metadata['url'] = None
 
-            if category_element:
-                category = category_element.text.strip()
-                metadata["category"] = category
+            if category:
+                metadata["category"] =map_categories(category)
             else:
-                metadata['category'] = None
+                metadata["category"] ="Others"
 
             if newsSource:
                 metadata["newsSource"] = newsSource['content']
@@ -78,11 +81,10 @@ def scrape_asahi_news():
             else:
                 metadata['description'] = None
 
-            if publishedDateTime:
-                date = publishedDateTime.text.strip()
-                metadata["publishedDateTime"] = date
-            else:
-                metadata['publishedDateTime'] = None
+            # if publishedDateTime:
+            #     metadata["publishedDateTime"]=publishedDateTime
+            # else:
+            #     metadata['publishedDateTime'] = None
 
             json_data_list.append(metadata)
 

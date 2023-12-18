@@ -6,6 +6,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
+from datetime import datetime
+
+from scrapeFunctionsModule.mapping import map_categories
 
 # ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
 # index_name="ap_news"
@@ -43,6 +46,7 @@ def scrape_ap_news():
 
     json_data_list = []
 
+ 
     for link in link_list:
         if link is not None:
             response = requests.get(link)
@@ -52,7 +56,7 @@ def scrape_ap_news():
             title = soup.find('meta', property='og:title')
             url = soup.find('meta', property='og:url')
             description = soup.find('meta', property='og:description')
-            publishedDateTime = soup.find('meta', property='article:published_time')
+            # publishedDateTime = soup.find('meta', property='article:published_time')
             category = soup.find('meta', property='article:section')
             newsSource = soup.find('meta', property='og:site_name')
 
@@ -65,13 +69,14 @@ def scrape_ap_news():
 
             if url:
                 metadata["url"] = url['content']
+                metadata["createdDateTime"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             else:
                 metadata["url"] = None
 
             if category:
-                metadata["category"] = category['content']
+                metadata["category"] =map_categories(category['content'])
             else:
-                metadata["category"] = None
+                metadata["category"] ="Others"
 
             if newsSource:
                 metadata["newsSource"] = newsSource['content']
@@ -83,27 +88,12 @@ def scrape_ap_news():
             else:
                 metadata["description"] = None
 
-            if publishedDateTime:
-                metadata["publishedDateTime"] = publishedDateTime['content']
-            else:
-                metadata["publishedDateTime"] = None
+            # if publishedDateTime:
+            #     metadata["publishedDateTime"] = publishedDateTime['content']
+            # else:
+            #     metadata["publishedDateTime"] = None
 
             json_data_list.append(metadata)
 
     with open(os.path.join('data', 'ap_news.json'), 'w') as json_file:
         json.dump(json_data_list, json_file, indent=2)
-
-# if __name__ == "__main__":
-#     scrape_apnews_data()
-
-
-# with open("data/apnews_data.json","r") as f:
-#     json_objects = json.load(f)
-#     f.close() 
-
-# # creating a index 
-# client.indices.create(index="ap_news")
- 
-# for json_doc in json_objects:
-#     doc_id=json_doc['url']
-#     response = client.index(index=index_name, body=json_doc, id=doc_id)

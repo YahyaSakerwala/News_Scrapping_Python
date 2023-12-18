@@ -1,6 +1,7 @@
 import json
 from elasticsearch import Elasticsearch
-from scrapeFunctionsModule import ap_news,asahi_news
+from scrapeFunctionsModule import ap_news,asahi_news,investing_news,mapping
+
 
 ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
 
@@ -12,22 +13,31 @@ client = Elasticsearch(
 
 print(client.ping())
 
+json_objects=[]
+
 if __name__ == "__main__":
    ap_news.scrape_ap_news()
    asahi_news.scrape_asahi_news()
+   investing_news.scrape_investing_news()
 
 with open("data/ap_news.json","r") as f:
-    json_objects = json.load(f)
+    data1 = json.load(f)
     f.close() 
-
-for json_doc in json_objects:
-    doc_id=json_doc['url']
-    response = client.index(index="ap_news", body=json_doc, id=doc_id)
 
 with open("data/asahi_news.json","r") as f:
-    json_objects = json.load(f)
+    data2 = json.load(f)
     f.close() 
- 
-for json_doc in json_objects:
-    doc_id=json_doc['url']
-    response = client.index(index="asahi_news", body=json_doc, id=doc_id)
+
+with open("data/investing_news.json","r") as f:
+    data3 = json.load(f)
+    f.close() 
+
+# Combine the arrays into a single list
+combined_objects_array= data1 + data2 + data3
+
+# client.indices.create(index="news")
+
+for combined_object in combined_objects_array:
+    doc_id=combined_object['url']
+    response=client.index(index="news",body=combined_object,id=doc_id)
+

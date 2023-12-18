@@ -33,3 +33,21 @@ client = Elasticsearch(
     basic_auth=("elastic", ELASTIC_PASSWORD)
 )
 print(client.ping())
+
+
+
+
+
+# for json_doc in json_objects:
+#     doc_id=json_doc['url']
+#     response = client.index(index="ap_news", body=json_doc, id=doc_id)
+
+
+# for json_doc in json_objects:
+#     doc_id=json_doc['url']
+#     response = client.index(index="asahi_news", body=json_doc, id=doc_id)
+
+ 
+# for json_doc in json_objects:
+#     doc_id=json_doc['url']
+#     response = client.index(index="investing_news", body=json_doc, id=doc_id)

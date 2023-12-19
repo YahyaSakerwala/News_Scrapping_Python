@@ -7,7 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 from datetime import datetime
-
 from scrapeFunctionsModule.mapping import map_categories
 
 # ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"

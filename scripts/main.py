@@ -4,11 +4,13 @@ from scrapeFunctionsModule import ap_news,asahi_news,investing_news,mapping
 
 
 ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
+api_key="MlA2TGdZd0JNVTh6OHZHdFhBRWw6TWI1WjdSQS1UVWFLenh4ZThzdF92QQ=="
 
 client = Elasticsearch(
     "https://localhost:9200",
     ca_certs="C:\\Users\\3439\\Elastic-Kibana\\kibana-8.11.3\\data\\ca_1702534907563.crt",
-    basic_auth=("elastic", ELASTIC_PASSWORD)
+    # basic_auth=("elastic", ELASTIC_PASSWORD)
+    api_key=api_key
 )
 
 print(client.ping())

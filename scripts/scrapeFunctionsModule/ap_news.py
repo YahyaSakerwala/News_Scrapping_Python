@@ -62,27 +62,32 @@ def scrape_ap_news():
             metadata = {}
 
             if title:
+                # print("type of title"+str(type(title['content'])))
                 metadata["title"] = title['content']
             else:
                 metadata['title'] = None
 
             if url:
+                # print("type of url"+str(type(url['content'])))
                 metadata["url"] = url['content']
                 metadata["createdDateTime"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             else:
                 metadata["url"] = None
 
             if category:
+                # print("type of category"+str(type(category['content'])))
                 metadata["category"] =map_categories(category['content'])
             else:
                 metadata["category"] ="Others"
 
             if newsSource:
+                # print("type of new Source"+str(type(newsSource['content'])))
                 metadata["newsSource"] = newsSource['content']
             else:
                 metadata["newsSource"] = None
 
             if description:
+                # print("type of new description"+str(type(description['content'])))
                 metadata["description"] = description['content']
             else:
                 metadata["description"] = None

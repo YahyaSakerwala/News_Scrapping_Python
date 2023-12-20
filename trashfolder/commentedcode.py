@@ -51,3 +51,17 @@ print(client.ping())
 # for json_doc in json_objects:
 #     doc_id=json_doc['url']
 #     response = client.index(index="investing_news", body=json_doc, id=doc_id)
+
+
+
+
+
+
+
+
+# class_ = value['class'].split() if 'class' in value else None
+#                     attributes = {}
+#                     if 'attributes' in value and isinstance(value['attributes'], dict):
+#                         attributes = {attr_key: attr_value for attr_key, attr_value in value['attributes'].items()}
+#                     key_element = soup.find(tag, class_=class_, attrs=attributes)
+#                     metadata[key] = key_element.text.strip() if key_element else None

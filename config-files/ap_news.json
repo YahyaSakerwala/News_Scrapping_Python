@@ -1,0 +1,54 @@
+
+{
+ "title":{
+    "by":"body" ,  
+    "id":"None",
+    "tag":"h1",
+    "class":"Page-headline",
+    "attributes":{},
+    "xpath":""
+  },
+
+ "url":{
+  "by":"body" ,  
+  "id":"None",
+  "tag":"meta",
+  "class":"None",
+  "attributes":{
+    "property": "og:url"
+  },
+  "xpath":""
+ },
+
+ "category":{
+  "by":"body" ,  
+  "id":"None",
+  "tag":"meta",
+  "class":"None",
+  "attributes":{
+    "property": "article:section"
+  },
+  "xpath":""
+ },
+ "newsSource":{
+  "by":"body" ,  
+  "id":"None",
+  "tag":"meta",
+  "class":"None",
+  "attributes":{
+    "property": "og:site_name"
+  },
+  "xpath":""
+ },
+ "description":{
+  "by":"body" ,  
+  "id":"None",
+  "tag":"meta",
+  "class":"None",
+  "attributes":{
+    "property": "og:description"
+  },
+  "xpath":""
+ }
+
+}

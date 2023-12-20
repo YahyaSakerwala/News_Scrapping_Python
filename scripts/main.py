@@ -37,8 +37,6 @@ with open("data/investing_news.json","r") as f:
 # Combine the arrays into a single list
 combined_objects_array= data1 + data2 + data3
 
-# client.indices.create(index="news")
-
 for combined_object in combined_objects_array:
     doc_id=combined_object['url']
     response=client.index(index="news",body=combined_object,id=doc_id)

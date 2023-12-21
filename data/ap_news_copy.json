@@ -5,7 +5,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "The credit rating agency Moody\u2019s Investors Service has lowered its outlook on the U.S. government\u2019s debt to \u201cnegative\u201d from \u201cstable.\u201d",
-    "publishedDateTime": "2023-11-10T23:03:45"
+    "publishedDateTime": "2023-11-10T23:03:45",
+    "createdTime": "2023-12-21T17:43:46.798729"
   },
   {
     "title": "Moody\u2019s cuts China credit outlook to negative, cites slowing economic growth, property crisis",
@@ -13,7 +14,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Moody\u2019s said the downgrade, its first for China since 2017, reflects risks from financing troubles of local and regional governments and state-owned enterprises.",
-    "publishedDateTime": "2023-12-05T10:11:03"
+    "publishedDateTime": "2023-12-05T10:11:03",
+    "createdTime": "2023-12-21T17:43:47.454982"
   },
   {
     "title": "Europe\u2019s economic outlook worsens as high prices plague consumer spending",
@@ -21,7 +23,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Europe's economic outlook just took a turn for the worse. The European Union's executive commission on Monday cut its forecast because high inflation is still discouraging consumers from spending money.",
-    "publishedDateTime": "2023-09-11T09:06:41"
+    "publishedDateTime": "2023-09-11T09:06:41",
+    "createdTime": "2023-12-21T17:43:48.064516"
   },
   {
     "title": "Shares of United Airlines tumble on sour outlook for 4Q profit because of rising fuel prices",
@@ -29,7 +32,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Shares of United Airlines have tumbled after the carrier issued a gloomy outlook for fourth-quarter profit. And they took other airline stocks lower, too on Wednesday.",
-    "publishedDateTime": "2023-10-18T14:23:36"
+    "publishedDateTime": "2023-10-18T14:23:36",
+    "createdTime": "2023-12-21T17:43:48.857900"
   },
   {
     "title": "Stock market today: Asian shares slip after Wall Street ends its best month of \u201923 with big gains",
@@ -37,7 +41,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Asian shares have slipped after Wall Street closed out its best month of the year with big gains in November. U.S. futures rose while oil prices dropped.",
-    "publishedDateTime": "2023-11-30T07:51:20"
+    "publishedDateTime": "2023-11-30T07:51:20",
+    "createdTime": "2023-12-21T17:43:49.609488"
   },
   {
     "title": "Dick\u2019s 2Q profit falls, and the retailer lowers its full-year outlook on worries about theft",
@@ -45,7 +50,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Dick\u2019s Sporting Goods profit slipped in its second quarter and missed Wall Street\u2019s expectations as the retailer cut its full-year profit outlook, citing worries over theft at its stores.",
-    "publishedDateTime": "2023-08-22T12:19:31"
+    "publishedDateTime": "2023-08-22T12:19:31",
+    "createdTime": "2023-12-21T17:43:50.305061"
   },
   {
     "title": "Foot Locker lowers full-year outlook again, pauses dividend as 2Q sales fall on cautious consumers",
@@ -53,7 +59,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Foot Locker is cutting its full-year outlook again and pausing its quarterly dividend as sales dropped in its fiscal second quarter with consumers continuing to be more cautious about their purchases.",
-    "publishedDateTime": "2023-08-23T11:44:20"
+    "publishedDateTime": "2023-08-23T11:44:20",
+    "createdTime": "2023-12-21T17:43:51.000593"
   },
   {
     "title": "Is Outlook down? Thousands of users report problems with Microsoft\u2019s email platform",
@@ -61,7 +68,8 @@
     "category": null,
     "newsSource": "AP News",
     "description": "WASHINGTON (AP) \u2014 Thousands of Microsoft Outlook users reported issues with accessing and using the email platform Monday morning.",
-    "publishedDateTime": "2023-06-06T00:07:07"
+    "publishedDateTime": "2023-06-06T00:07:07",
+    "createdTime": "2023-12-21T17:43:51.601143"
   },
   {
     "title": "IMF global economic outlook sees slight growth, but inflation still a drag",
@@ -69,7 +77,8 @@
     "category": "Politics",
     "newsSource": "AP News",
     "description": "The International Monetary Fund is projecting that global economic growth will see a slight improvement compared to its previous projections but cautions that many challenges still cloud the horizon.",
-    "publishedDateTime": "2023-07-25T17:08:52"
+    "publishedDateTime": "2023-07-25T17:08:52",
+    "createdTime": "2023-12-21T17:43:52.133722"
   },
   {
     "title": "Purdue visits Iowa for key Big Ten West game;.QB Deacon Hill to make his first start for Hawkeyes",
@@ -77,7 +86,8 @@
     "category": "Sports",
     "newsSource": "AP News",
     "description": "Purdue visits Iowa in a key Big Ten West game Saturday. The Hawkeyes have no more ranked teams on their schedule and could take control of the division.",
-    "publishedDateTime": "2023-10-05T16:32:28"
+    "publishedDateTime": "2023-10-05T16:32:28",
+    "createdTime": "2023-12-21T17:43:52.721726"
   },
   {
     "title": null,
@@ -85,7 +95,8 @@
     "category": null,
     "newsSource": "AP News",
     "description": "Vice President Kamala Harris engaged in a speed round of diplomatic talks with Arab leaders on Saturday where she focused on shaping the outlook for a post-conflict Gaza while calling on Israel to do more to protect Palestinian civilians.",
-    "publishedDateTime": null
+    "publishedDateTime": null,
+    "createdTime": "2023-12-21T17:43:53.285725"
   },
   {
     "title": "Target Q2 sales fall on muted spending, Pride month backlash, and it cuts profit outlook for 2023",
@@ -93,7 +104,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Target reported its first quarterly sales drop in six years, dragged down by shoppers' inflation worries and a negative reaction by some customers, widely publicized on social media, to its Pride merchandise.",
-    "publishedDateTime": "2023-08-16T10:33:41"
+    "publishedDateTime": "2023-08-16T10:33:41",
+    "createdTime": "2023-12-21T17:43:53.885303"
   },
   {
     "title": "Wisconsin university system reaches deal with Republicans that would scale back diversity positions",
@@ -101,7 +113,8 @@
     "category": "Education",
     "newsSource": "AP News",
     "description": "The Universities of Wisconsin and Assembly Republican Speaker Robin Vos have reached a sweeping deal that would freeze hiring for diversity positions across the system in exchange for lawmakers approving employee pay raises and funding for a new engineering building at the flagship campus.",
-    "publishedDateTime": "2023-12-08T18:28:30"
+    "publishedDateTime": "2023-12-08T18:28:30",
+    "createdTime": "2023-12-21T17:43:54.524304"
   },
   {
     "title": null,
@@ -109,7 +122,8 @@
     "category": null,
     "newsSource": "AP News",
     "description": "Thanksgiving travelers will number nearly 55 million people this holiday week, requiring patience and advance planning to make all those trips less stressful.",
-    "publishedDateTime": null
+    "publishedDateTime": null,
+    "createdTime": "2023-12-21T17:43:55.041917"
   },
   {
     "title": "German government advisers see only modest economic growth next year",
@@ -117,7 +131,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "The German government\u2019s panel of independent economic advisers is forecasting that the country's economy will shrink by 0.4% this year and grow only by a relatively modest 0.7% next year.",
-    "publishedDateTime": "2023-11-08T14:33:48"
+    "publishedDateTime": "2023-11-08T14:33:48",
+    "createdTime": "2023-12-21T17:43:55.722495"
   },
   {
     "title": "Wisconsin\u2019s annual gun deer season set to open this weekend",
@@ -125,7 +140,8 @@
     "category": "U.S. News",
     "newsSource": "AP News",
     "description": "Wisconsin\u2019s annual nine-day gun deer-hunting season starts this weekend to a mixed outlook. The season kicks off at sunrise on Saturday and closes on the evening of Sunday, Nov. 26.",
-    "publishedDateTime": "2023-11-16T20:57:36"
+    "publishedDateTime": "2023-11-16T20:57:36",
+    "createdTime": "2023-12-21T17:43:56.429498"
   },
   {
     "title": "QB transfers dominate the headlines. But the portal\u2019s had a major impact on other positions too",
@@ -133,7 +149,8 @@
     "category": "Sports",
     "newsSource": "AP News",
     "description": "All the attention surrounding quarterbacks who switch schools has overshadowed how the popularity of the transfer portal has affected the way colleges try stockpile talent at other positions.",
-    "publishedDateTime": "2023-12-19T19:30:04"
+    "publishedDateTime": "2023-12-19T19:30:04",
+    "createdTime": "2023-12-21T17:43:57.078500"
   },
   {
     "title": "Microsoft says early June disruptions to Outlook, cloud platform, were cyberattacks",
@@ -141,7 +158,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "Microsoft says the early June disruptions to its Microsoft\u2019s flagship office suite \u2014 including the Outlook email apps \u2014 were denial-of-service attacks by a shadowy new hacktivist group.",
-    "publishedDateTime": "2023-06-17T21:43:11"
+    "publishedDateTime": "2023-06-17T21:43:11",
+    "createdTime": "2023-12-21T17:43:57.645069"
   },
   {
     "title": "Economy has lost momentum during a tough year, EU commission says and warns of risk from Mideast",
@@ -149,7 +167,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "The European Union\u2019s executive commission has lowered growth its expectations for this year and next, saying the economy \u201chas lost momentum\u201d as inflation discourages consumers and higher interest rates deter borrowing for purchases and investment.",
-    "publishedDateTime": "2023-11-15T10:17:41"
+    "publishedDateTime": "2023-11-15T10:17:41",
+    "createdTime": "2023-12-21T17:43:58.275734"
   },
   {
     "title": "MLB, union say there was 1 positive test among record 11,783 drug scans in the last year",
@@ -157,7 +176,8 @@
     "category": "Sports",
     "newsSource": "AP News",
     "description": "There was just one positive test resulting in discipline from among a record 11,783 samples collected by Major League Baseball and the players\u2019 association in the year ending with the 2023 World Series.",
-    "publishedDateTime": "2023-12-01T20:00:06"
+    "publishedDateTime": "2023-12-01T20:00:06",
+    "createdTime": "2023-12-21T17:43:58.845733"
   },
   {
     "title": "A surge of hiring in September defies predictions, pointing to US job market\u2019s enduring resilience",
@@ -165,7 +185,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "The unexpectedly strong gain suggests many companies remain confident enough to keep hiring despite high interest rates and a hazy economic outlook.",
-    "publishedDateTime": "2023-10-06T04:01:07"
+    "publishedDateTime": "2023-10-06T04:01:07",
+    "createdTime": "2023-12-21T17:43:59.538781"
   },
   {
     "title": "Wisconsin Assembly\u2019s top Republican wants to review diversity positions across state agencies",
@@ -173,7 +194,8 @@
     "category": "U.S. News",
     "newsSource": "AP News",
     "description": "The Republican lawmaker who forced the Universities of Wisconsin to reduce its diversity positions called Tuesday for an in-depth review of diversity initiatives across state government.",
-    "publishedDateTime": "2023-12-19T20:58:12"
+    "publishedDateTime": "2023-12-19T20:58:12",
+    "createdTime": "2023-12-21T17:44:00.153788"
   },
   {
     "title": "West Virginia GOP Gov. Justice appoints cabinet secretary to circuit judge position",
@@ -181,7 +203,8 @@
     "category": "U.S. News",
     "newsSource": "AP News",
     "description": "West Virginia Republican Gov. Jim Justice has appointed a member of his cabinet to a circuit judge position and replaced him with one of his senior advisers.",
-    "publishedDateTime": "2023-12-13T23:44:05"
+    "publishedDateTime": "2023-12-13T23:44:05",
+    "createdTime": "2023-12-21T17:44:00.766643"
   },
   {
     "title": "Oil prices could reach \u2018uncharted waters\u2019 if the Israel-Hamas war escalates, the World Bank says",
@@ -189,7 +212,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "The World Bank says oil prices could be pushed into \u201cuncharted waters\u201d if the violence between Israel and Hamas widens.",
-    "publishedDateTime": "2023-10-30T11:00:55"
+    "publishedDateTime": "2023-10-30T11:00:55",
+    "createdTime": "2023-12-21T17:44:01.513627"
   },
   {
     "title": "German Chancellor Scholz tests positive for COVID, visit by new Slovak leader canceled",
@@ -197,7 +221,8 @@
     "category": "World News",
     "newsSource": "AP News",
     "description": "German Chancellor Olaf Scholz says he has tested positive for COVID-19. The government says a visit by Slovakia's prime minister had to be canceled as a result.",
-    "publishedDateTime": "2023-12-18T11:07:03"
+    "publishedDateTime": "2023-12-18T11:07:03",
+    "createdTime": "2023-12-21T17:44:02.240203"
   },
   {
     "title": "Scores of candidates to seek high-profile open political positions in North Carolina as filing ends",
@@ -205,7 +230,8 @@
     "category": "Politics",
     "newsSource": "AP News",
     "description": "Scores of candidates filed for nearly a dozen high-profile elected positions in North Carolina where the incumbents aren\u2019t running in 2024 because of redistricting, retirements or term limits.",
-    "publishedDateTime": "2023-12-15T21:12:15"
+    "publishedDateTime": "2023-12-15T21:12:15",
+    "createdTime": "2023-12-21T17:44:02.947202"
   },
   {
     "title": "IMF: Prolonged high inflation dims outlook for world economy",
@@ -213,7 +239,8 @@
     "category": null,
     "newsSource": "AP News",
     "description": "The outlook for the world economy this year has dimmed in the face of chronically high inflation, rising interest rates and uncertainties resulting from the collapse of two big American banks. That\u2019s the view of the International Monetary Fund, which has downgraded its outlook for global economic growth. The IMF now envisions growth this year of 2.8%, down from 3.4% in 2022 and from the 2.9% estimate for 2023 it made in its previous forecast in January. The fund said the possibility of a \u201chard landing,\u201d in which rising interest rates weaken growth so much as to cause a recession, has \u201drisen sharply,\u201d especially in the world\u2019s wealthiest countries.",
-    "publishedDateTime": "2023-04-11T20:21:19"
+    "publishedDateTime": "2023-04-11T20:21:19",
+    "createdTime": "2023-12-21T17:44:03.535760"
   },
   {
     "title": "Red Bull\u2019s Verstappen to start Brazilian Grand Prix in the pole position",
@@ -221,7 +248,8 @@
     "category": "Sports",
     "newsSource": "AP News",
     "description": "Formula One champion Max Verstappen of Red Bull will start this weekend\u2019s Brazilian Grand Prix in the pole position, with his teammate S\u00e9rgio Perez lagging in ninth position at Interlagos after Friday\u2019s qualifying.",
-    "publishedDateTime": "2023-11-03T16:15:23"
+    "publishedDateTime": "2023-11-03T16:15:23",
+    "createdTime": "2023-12-21T17:44:04.258799"
   },
   {
     "title": "US consumers feeling slightly less confident in October for 3rd straight month",
@@ -229,7 +257,8 @@
     "category": "Business",
     "newsSource": "AP News",
     "description": "American consumers are feeling increasingly less confident these days as fears of an oncoming recession remain elevated.",
-    "publishedDateTime": "2023-10-31T14:12:41"
+    "publishedDateTime": "2023-10-31T14:12:41",
+    "createdTime": "2023-12-21T17:44:04.881599"
   },
   {
     "title": "Airbnb posts $117 million profit, but 2Q outlook disappoints",
@@ -237,6 +266,7 @@
     "category": null,
     "newsSource": "AP News",
     "description": "Airbnb has reported a $117 million profit for the first quarter, but investors are disappointed by a weak forecast for the late spring and early summer. Airbnb said Tuesday that bookings in the current second quarter will be lower than a year ago. That outlook overshadowed the first-quarter profit and a 20% increase in revenue. Bookings rose, and average daily rates paid by customers held steady. Airbnb is still getting a boost from the ongoing recovery in travel, which took a hit during the pandemic. It's also being aided by the trend of more people working remotely.",
-    "publishedDateTime": "2023-05-10T00:58:33"
+    "publishedDateTime": "2023-05-10T00:58:33",
+    "createdTime": "2023-12-21T17:44:05.558146"
   }
 ]

@@ -1,0 +1,58 @@
+{
+    "title": {
+        "by": "body",
+        "id": "None",
+        "tag": "meta",
+        "class": "None",
+        "attributes": {
+            "property": "og:description"
+        },
+        "xpath": ""
+    },
+    "url": {
+        "by": "body",
+        "id": "None",
+        "tag": "meta",
+        "class": "None",
+        "attributes": {
+            "property": "og:url"
+        },
+        "xpath": ""
+    },
+    "category": {
+        "by": "body",
+        "id": "None",
+        "tag": "p",
+        "class": "Genre",
+        "attributes": {},
+        "xpath": ""
+    },
+    "newsSource": {
+        "by": "body",
+        "id": "None",
+        "tag": "meta",
+        "class": "None",
+        "attributes": {
+            "property": "og:site_name"
+        },
+        "xpath": ""
+    },
+    "description": {
+        "by": "body",
+        "id": "None",
+        "tag": "meta",
+        "class": "None",
+        "attributes": {
+            "property": "og:description"
+        },
+        "xpath": ""
+    },
+    "publishedDateTime": {
+        "by": "body",
+        "id": "None",
+        "tag": "p",
+        "class": "EnLastUpdated",
+        "attributes": {},
+        "xpath": ""
+    }
+}

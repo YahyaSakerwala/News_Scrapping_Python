@@ -1,0 +1,57 @@
+
+{
+    "title":{
+       "by":"" ,  
+       "id":"",
+       "tag":"",
+       "class":"",
+       "attributes":{},
+       "xpath":""
+     },
+   
+    "url":{
+     "by":"" ,  
+     "id":"",
+     "tag":"",
+     "class":"",
+     "attributes":{},
+     "xpath":""
+    },
+   
+    "category":{
+     "by":"" ,  
+     "id":"",
+     "tag":"",
+     "class":"",
+     "attributes":{},
+     "xpath":""
+    },
+
+    "newsSource":{
+     "by":"" ,  
+     "id":"",
+     "tag":"",
+     "class":"",
+     "attributes":{},
+     "xpath":""
+    },
+
+    "description":{
+     "by":"" ,  
+     "id":"",
+     "tag":"",
+     "class":"",
+     "attributes":{},
+     "xpath":""
+    },
+
+    "publishedDateTime":{
+     "by":"" ,  
+     "id":"",
+     "tag":"",
+     "class":"",
+     "attributes":{},
+     "xpath":""
+    }
+   
+   }

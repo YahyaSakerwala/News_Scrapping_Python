@@ -6,53 +6,44 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
-from news_json import get_news_json
-from datetime import datetime
-from mapping import map_categories
+from selenium.webdriver.common.by import By
 from lxml import etree
+from datetime import datetime
 
-# ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
-# index_name="ap_news"
-
-# client = Elasticsearch(
-#     "https://localhost:9200",
-#     ca_certs="C:\\Users\\3439\\Elastic-Kibana\\kibana-8.11.3\\data\\ca_1702534907563.crt",
-#     basic_auth=("elastic", ELASTIC_PASSWORD)
-# )
-
-# print(client.ping())
-
-
-def scrape_ap_news():
+def scrape_investing_news():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('executable_path=C:\\Users\\3439\\python_scrapping\\drivers\\chromedriver.exe')
 
     driver = webdriver.Chrome(options=chrome_options)
     driver.maximize_window()
 
-    driver.get("https://apnews.com/search?q=positive+outlook&s=0")
+    driver.get("https://www.investing.com/search/?q=positive%20outlook&tab=news")
 
-    elements = WebDriverWait(driver, 20).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".Link:not(.AnClick-TrendingLink)"))
+    element = WebDriverWait(driver, 20).until(
+    EC.presence_of_element_located((By.CSS_SELECTOR, ".js-section-content.largeTitle:not(.analysisImg)"))
     )
 
-    link_list = []  # pass to the general soup function
+    link_list=[]
 
-    for element in elements:
-        href_link = element.get_attribute("href")
-        if href_link not in link_list:
+    articleItems= element.find_elements(By.CSS_SELECTOR,"div.articleItem")
+    for articleItem in articleItems:
+        a_element=articleItem.find_element(By.CSS_SELECTOR,"a.img")
+        href_link=a_element.get_attribute("href")
+        if href_link and href_link not in link_list:
             link_list.append(href_link)
 
     driver.quit()
 
     json_data_list = []
+
+ 
     for link in link_list:
         if link is not None:
             response = requests.get(link)
             html_content = response.content
             soup = BeautifulSoup(html_content, "html.parser")
 
-            with open("config-files\\ap_news_config.json", 'r') as file:
+            with open("config-files\\investing_news_config.json", 'r') as file:
                 config = json.load(file)
 
             metadata={}
@@ -87,7 +78,7 @@ def scrape_ap_news():
                         else:
                             metadata[key] = key_element.text.strip() if key_element else None
 
-                    if tag is not None and class_[0] == 'None':
+                    if tag is not None and class_[0] == 'None' and len(attributes)>0:
                         key_element = soup.find(tag,attributes)
                         if tag=='meta':
                             metadata[key] = key_element.get('content') if key_element else None
@@ -107,10 +98,11 @@ def scrape_ap_news():
                         xpath_expression=value['xpath']
                         key_element= soup_lxml.xpath(xpath_expression)
                         metadata[key]=key_element[0].text.strip() if key_element else None
-            
+
             metadata['createdTime']=datetime.now().isoformat()
             json_data_list.append(metadata)
 
-        with open(os.path.join('data', 'ap_news_copy.json'), 'w') as json_file:
+        with open(os.path.join('data', 'investing_news_copy.json'), 'w') as json_file:
             json.dump(json_data_list, json_file, indent=2)
-scrape_ap_news()
+
+scrape_investing_news()

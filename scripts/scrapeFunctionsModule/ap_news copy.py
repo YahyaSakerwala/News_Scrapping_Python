@@ -60,6 +60,7 @@ def scrape_ap_news():
 
 
             for key, value in config.items():
+
                 if value["by"] == "id":
                     element_id = value['id']
                     key_element = soup.find(id=element_id)
@@ -73,7 +74,7 @@ def scrape_ap_news():
                     if 'attributes' in value and isinstance(value['attributes'], dict):
                         attributes = {attr_key: attr_value for attr_key, attr_value in value['attributes'].items()}
 
-                    if tag is not None and class_[0] == 'None' and len(attributes)  ==0:
+                    if tag is not None and class_[0] == 'None' and len(attributes)==0:
                         key_element = soup.find(tag)
                         if tag=='meta':
                             metadata[key] = key_element.get('content') if key_element else None
@@ -106,5 +107,8 @@ def scrape_ap_news():
                         print("user selected xpath")
             
 
-            print(metadata)
+            json_data_list.append(metadata)
+
+        with open(os.path.join('data', 'ap_news_copy.json'), 'w') as json_file:
+            json.dump(json_data_list, json_file, indent=2)
 scrape_ap_news()

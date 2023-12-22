@@ -1,15 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
-import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os
 from selenium.webdriver.common.by import By
-from datetime import datetime
-from scrapeFunctionsModule.mapping import map_categories
-
+from scrapeFunctionsModule.soupScraping import scrape_news
 
 def scrape_investing_news():
     chrome_options = webdriver.ChromeOptions()
@@ -24,63 +18,18 @@ def scrape_investing_news():
     EC.presence_of_element_located((By.CSS_SELECTOR, ".js-section-content.largeTitle:not(.analysisImg)"))
     )
 
-    href_link_list=[]
+    news_links=[]
 
     articleItems= element.find_elements(By.CSS_SELECTOR,"div.articleItem")
     for articleItem in articleItems:
         a_element=articleItem.find_element(By.CSS_SELECTOR,"a.img")
         href_link=a_element.get_attribute("href")
-        if href_link and href_link not in href_link_list:
-            href_link_list.append(href_link)
+        if href_link and href_link not in news_links:
+            news_links.append(href_link)
 
     driver.quit()
 
-    json_data_list = []
-
-    for link in href_link_list:
-        if link is not None:
-            response = requests.get(link)
-            html_content = response.content
-            soup = BeautifulSoup(html_content, "html.parser")
-
-            title = soup.find(class_ = "articleHeader").text
-            content_section_for_category = soup.find('ul', class_='subNavUL')
-            category = content_section_for_category.find(class_ = 'selected').text.strip()
-            url = soup.find('meta', property='og:url')
-            source = soup.find('meta', property='og:site_name')
-            description = soup.find('meta', property='og:description')
-            
-
-            metadata = {}
-
-            if title:
-                metadata["title"] = title
-            else:
-                metadata['title'] = None
-
-            if url:
-                metadata["url"] = url['content'] 
-                metadata["createdDateTime"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            else:
-                metadata['url'] = None   
-
-            if source:
-                metadata["source"] = source['content'] 
-            else:
-                metadata['source'] = None
-
-            if category:
-                metadata["category"] =map_categories(category)
-            else:
-                metadata["category"] ="Others"
-                
-            if description:
-                metadata["description"] = description['content'] 
-            else:
-                metadata['description'] = None   
-
-            json_data_list.append(metadata)
-
-    with open(os.path.join('data', 'investing_news.json'), 'w') as json_file:
-        json.dump(json_data_list, json_file, indent=2)
+    config_file_path="investing_news_config.json"
+    store_file_path="investing_news.json"
+    scrape_news(news_links,config_file_path,store_file_path)
 

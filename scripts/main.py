@@ -1,9 +1,9 @@
 import json
 from elasticsearch import Elasticsearch
-from scrapeFunctionsModule import ap_news,asahi_news,investing_news,mapping
+from scrapeFunctionsModule import ap_news,asahi_news,investing_news
 
 
-ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
+# ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
 api_key="MlA2TGdZd0JNVTh6OHZHdFhBRWw6TWI1WjdSQS1UVWFLenh4ZThzdF92QQ=="
 
 client = Elasticsearch(
@@ -41,4 +41,4 @@ client.indices.create(index="news")
 for combined_object in combined_objects_array:
     doc_id=combined_object['url']
     response=client.index(index="news",body=combined_object,id=doc_id)
-
+    

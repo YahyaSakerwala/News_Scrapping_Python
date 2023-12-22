@@ -2,7 +2,7 @@
 {
  "title":{
     "by":"body" ,  
-    "id":"None",
+    "id":"",
     "tag":"h1",
     "class":"Page-headline",
     "attributes":{},
@@ -11,9 +11,9 @@
 
  "url":{
   "by":"body" ,  
-  "id":"None",
+  "id":"",
   "tag":"meta",
-  "class":"None",
+  "class":"",
   "attributes":{
     "property": "og:url"
   },
@@ -22,9 +22,9 @@
 
  "category":{
   "by":"body" ,  
-  "id":"None",
+  "id":"",
   "tag":"meta",
-  "class":"None",
+  "class":"",
   "attributes":{
     "property": "article:section"
   },
@@ -32,9 +32,9 @@
  },
  "newsSource":{
   "by":"body" ,  
-  "id":"None",
+  "id":"",
   "tag":"meta",
-  "class":"None",
+  "class":"",
   "attributes":{
     "property": "og:site_name"
   },
@@ -42,9 +42,9 @@
  },
  "description":{
   "by":"body" ,  
-  "id":"None",
+  "id":"",
   "tag":"meta",
-  "class":"None",
+  "class":"",
   "attributes":{
     "property": "og:description"
   },
@@ -52,9 +52,9 @@
  },
  "publishedDateTime":{
   "by":"body" ,  
-  "id":"None",
+  "id":"",
   "tag":"meta",
-  "class":"None",
+  "class":"",
   "attributes":{
     "property": "article:published_time"
   },

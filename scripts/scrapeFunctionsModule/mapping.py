@@ -1,7 +1,8 @@
 def map_categories(original_category):
         # Define a mapping dictionary
         category_mapping = {
-        'Business': ['economy', 'economic news', 'financial','business'],
+        'Business': ['financial','business'],
+        'Economy': ['economy', 'economic news'],
         'Politics': ['politics', 'government', 'political'],
         'Opinion': ['opinion'],
         'Stocks':['stock markets','stocks','stock market'],

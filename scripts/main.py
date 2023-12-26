@@ -4,11 +4,11 @@ from scrapeFunctionsModule import ap_news,asahi_news,investing_news
 
 
 # ELASTIC_PASSWORD = "OMddL2qDGNJinws6DnNq"
-api_key="MlA2TGdZd0JNVTh6OHZHdFhBRWw6TWI1WjdSQS1UVWFLenh4ZThzdF92QQ=="
+api_key="djZSVGNvd0Jqc0JzMzBZTGxVamI6cVRsS1lsOXNSOG1DZjl5R2lPUldoZw=="
 
 client = Elasticsearch(
     "https://localhost:9200",
-    ca_certs="C:\\Users\\3439\\Elastic-Kibana\\kibana-8.11.3\\data\\ca_1702534907563.crt",
+    ca_certs="C:\\ElasticKibana\\kibana-8.11.3\\data\\ca_1702548513853.crt",
     # basic_auth=("elastic", ELASTIC_PASSWORD)
     api_key=api_key
 )
@@ -22,15 +22,15 @@ if __name__ == "__main__":
    asahi_news.scrape_asahi_news()
    investing_news.scrape_investing_news()
 
-with open("data/ap_news.json","r") as f:
+with open("scrape/data/ap_news.json","r") as f:
     data1 = json.load(f)
     f.close() 
 
-with open("data/asahi_news.json","r") as f:
+with open("scrape/data/asahi_news.json","r") as f:
     data2 = json.load(f)
     f.close() 
 
-with open("data/investing_news.json","r") as f:
+with open("scrape/data/investing_news.json","r") as f:
     data3 = json.load(f)
     f.close() 
 

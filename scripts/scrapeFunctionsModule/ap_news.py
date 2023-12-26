@@ -6,7 +6,7 @@ from scrapeFunctionsModule.soupScraping import scrape_news
 
 def scrape_ap_news():
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('executable_path=C:\\Users\\3439\\python_scrapping\\drivers\\chromedriver.exe')
+    chrome_options.add_argument('executable_path=C:\\Users\\3441\\Python Programs\\scrape\\drivers\\chromedriver.exe')
 
     driver = webdriver.Chrome(options=chrome_options)
     driver.maximize_window()

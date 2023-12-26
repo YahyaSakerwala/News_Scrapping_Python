@@ -8,12 +8,12 @@ from scrapeFunctionsModule.mapping import map_categories
 
 def scrape_news(news_links,config_file_path,store_file_path):
 
-    config_path = f"config-files\\{config_file_path}"
+    config_path = f"scrape\\config-files\\{config_file_path}"
+    store_path=f"scrape\\data\\{store_file_path}"
 
     with open(config_path, 'r') as file:
                 config = json.load(file)
-    print(config)
-    store_path=f"data\\{store_file_path}"
+
 
 
     all_news_jsonArray = []
